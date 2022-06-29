@@ -15,3 +15,6 @@ jobs:
           cache-dependency-path: '${{ env.CACHE_DEPENDENCY_PATH }}'
       - run: pip install -r ${{ env.CACHE_DEPENDENCY_PATH }}
       - run: python -m unittest -v
+      - run: sleep 30
+      - run: echo "hello, world B"
+
